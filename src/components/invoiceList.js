@@ -1,10 +1,11 @@
 import React from "react";
+import { ListCont } from "../styles/invoiceListStyles";
 
 const InvoiceList = () => {
 	return (
-		<div>
+		<ListCont>
 			<h1>List component</h1>
-		</div>
+		</ListCont>
 	);
 };
 

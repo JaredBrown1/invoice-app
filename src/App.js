@@ -1,14 +1,13 @@
-import "./App.css";
-
 import SideBar from "./components/sideBar";
 import InvoiceList from "./components/invoiceList";
+import { MainCont } from "./styles/appStyles";
 
 function App() {
 	return (
-		<div className="App">
+		<MainCont className="App">
 			<SideBar />
 			<InvoiceList />
-		</div>
+		</MainCont>
 	);
 }
 

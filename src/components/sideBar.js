@@ -1,10 +1,11 @@
 import React from "react";
+import { SidebarCont } from "../styles/sidebarStyles";
 
 const SideBar = () => {
 	return (
-		<div>
-			<h1>Sidebar component</h1>
-		</div>
+		<SidebarCont>
+			<p>Sidebar component</p>
+		</SidebarCont>
 	);
 };
 
