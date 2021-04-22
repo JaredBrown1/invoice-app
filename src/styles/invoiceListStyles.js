@@ -5,4 +5,7 @@ export const ListCont = styled.div`
 	max-width: 90%;
 	max-height: 100%;
 	border: solid 2px blue;
+	float: right;
+	margin-left: 203px;
+	text-align: center;
 `;
