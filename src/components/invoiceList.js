@@ -4,7 +4,11 @@ import { ListCont } from "../styles/invoiceListStyles";
 const InvoiceList = () => {
 	return (
 		<ListCont>
-			<h1>List component</h1>
+			<h1>Invoices</h1>
+			<p># of total invoices</p>
+			<p>filter dropdown</p>
+			<button>new invoice</button>
+			<div>mapped invoice data here</div>
 		</ListCont>
 	);
 };
