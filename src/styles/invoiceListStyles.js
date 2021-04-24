@@ -9,3 +9,8 @@ export const ListCont = styled.div`
 	margin-left: 203px;
 	text-align: center;
 `;
+
+export const InfoBar = styled.div`
+	display: flex;
+	justify-content: space-around;
+`;
