@@ -1,14 +1,14 @@
 import React from "react";
 import { CardCont } from "../styles/invoiceListCardStyles";
 
-const ListCard = () => {
+const ListCard = (props) => {
 	return (
 		<CardCont>
-			<h2>#RT3080</h2>
-			<p>Due 19 aug 2021</p>
-			<p>Jensen Huang</p>
-			<h2>$1,800.90</h2>
-			<p>Paid</p>
+			<h2>{props.id}</h2>
+			<p>{props.paymentDue}</p>
+			<p>{props.clientName}</p>
+			<h2>{props.items.total}</h2>
+			<p>{props.status}</p>
 		</CardCont>
 	);
 };

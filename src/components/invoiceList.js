@@ -3,6 +3,8 @@ import { ListCont, InfoBar } from "../styles/invoiceListStyles";
 
 import ListCard from "./invoiceListCard";
 
+import Data from "../data/data.json";
+
 const InvoiceList = () => {
 	return (
 		<ListCont>
@@ -14,9 +16,9 @@ const InvoiceList = () => {
 				<p>filter dropdown</p>
 				<button>new invoice</button>
 			</InfoBar>
-			<ListCard />
-			<ListCard />
-			<ListCard />
+			{Data.map((invoices) => {
+				return <ListCard key={invoices.id} {...invoices} />;
+			})}
 		</ListCont>
 	);
 };

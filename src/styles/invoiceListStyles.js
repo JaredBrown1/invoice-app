@@ -11,6 +11,9 @@ export const ListCont = styled.div`
 `;
 
 export const InfoBar = styled.div`
+	margin: 0 auto;
 	display: flex;
 	justify-content: space-around;
+	max-height: 300px;
+	max-width: 900px;
 `;
