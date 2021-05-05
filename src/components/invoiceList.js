@@ -6,6 +6,12 @@ import ListCard from "./invoiceListCard";
 import Data from "../data/data.json";
 
 const InvoiceList = () => {
+	const handleClick = (e) => {
+		const id = e.target.id;
+		console.log("Hello world!!!!!");
+		console.log(id);
+	};
+
 	return (
 		<ListCont>
 			<InfoBar>
@@ -17,10 +23,12 @@ const InvoiceList = () => {
 				<button>new invoice</button>
 			</InfoBar>
 			{Data.map((invoices) => {
-				return <ListCard key={invoices.id} {...invoices} />;
+				return (
+					<ListCard onClick={handleClick} key={invoices.id} {...invoices} />
+				);
 			})}
 		</ListCont>
 	);
 };
 
-export default InvoiceList;
+export default InvoiceList; // REACT ROUTER RENDER PROPERTY TO RENDER SPECIFIC COMPONENT ONCLICK

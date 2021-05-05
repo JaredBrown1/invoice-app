@@ -1,13 +1,11 @@
-import SideBar from "./components/sideBar";
-import InvoiceList from "./components/invoiceList";
-import { MainCont } from "./styles/appStyles";
+import HomePage from "./components/homePage";
+import { Route } from "react-router-dom";
 
 function App() {
 	return (
-		<MainCont className="App">
-			<SideBar />
-			<InvoiceList />
-		</MainCont>
+		<>
+			<Route exact path="/" component={HomePage} />;
+		</>
 	);
 }
 
